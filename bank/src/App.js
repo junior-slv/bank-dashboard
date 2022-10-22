@@ -1,18 +1,16 @@
-import {FiSearch} from 'react-icons/fi'
+import React from 'react';
+import './App.css';
 
 function App() {
   return (
     <div className="container">
-      <h1 className="title">TESTE</h1>
-      <div className="containerInput">
-        <input
-        type="text"
-        placeholder="...">
-        </input>
-          <button>
-          <FiSearch size={25} color="#fff"/>
-          </button>
-        
+      <div className='mainMenu'>
+            <div className='mainMenuText'>
+                <h1>Bem vindo, $nome</h1>
+            </div>
+            <div className='generateButton'>
+                <button>Generate your new card! </button>
+            </div>
       </div>
     </div>
   );
