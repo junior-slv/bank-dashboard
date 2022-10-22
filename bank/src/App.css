@@ -9,4 +9,30 @@
 }
 .mainMenu{
     border: 1px solid #000;
+    height: 50%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.mainButton{
+    background: white;
+    padding: 16px 32px;
+    font-size: 20px;
+    border: none;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 15px;
+
+}
+.mainButton:hover{
+    -webkit-box-shadow: 0px -4px 39px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -4px 39px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px -4px 39px -9px rgba(0,0,0,0.75);
+    transition: all 0.2s ease-in-out;
+}
+.mainButton:not(:hover){
+    transition: all 0.3s ease-in-out;
 }
