@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.css';
 import { generateCard} from './generateCard';
 
@@ -17,7 +16,7 @@ function App() {
             </div>
       </div>
       <div className='card'>
-            <p id='cardNumber'>{}</p>
+            <p id='cardNumber'></p>
       </div>
     </div>
   );

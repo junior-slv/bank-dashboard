@@ -1,4 +1,4 @@
-function generateCard(){
+export function generateCard(){
     const number1 = Math.floor(Math.random() * 10)
     const number2 = Math.floor(Math.random() * 10)
     const number3 = Math.floor(Math.random() * 10)
@@ -23,4 +23,3 @@ function generateCard(){
     console.log(newCc)
     }
   
-  generateCard()
