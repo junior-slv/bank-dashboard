@@ -16,7 +16,7 @@ function App() {
             </div>
       </div>
       <div className='card'>
-            <p id='cardNumber'></p>
+            <p id='cardNumber'> {newCc}</p>
       </div>
     </div>
   );
