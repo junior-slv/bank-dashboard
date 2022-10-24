@@ -43,7 +43,7 @@ export function newCard() {
   // newCc = cc.toString();
   console.log(newCc)
 }
-export function test() {
+export function callCc() {
   generateCard()
   newCard()
   var s = document.getElementById("cardNumber");

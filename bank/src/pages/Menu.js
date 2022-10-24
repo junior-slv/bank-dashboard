@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
-import { newCc } from './generateCard.js';
-import { test } from './generateCard.js';
+import './Menu.css';
+import { newCc, callCc } from '../scripts/generateCard.js';
 
 
 
 
 
-function App() {
+
+function Menu() {
   return (
     <div className="container">
       <div className='mainMenu'>
@@ -15,7 +15,7 @@ function App() {
                 <h1>Welcome, $name</h1>
             </div>
             <div className='generateButton'>
-                <button id='mainButton' className='mainButton' onClick={test}>Generate new card!</button>
+                <button id='mainButton' className='mainButton' onClick={callCc}>Generate new card!</button>
             </div>
             <div className='card'>
             <p id='cardNumber'> {newCc}</p>
@@ -26,7 +26,7 @@ function App() {
   );
 }
 
-export default App;
+export default Menu;
  
 
 
