@@ -38,10 +38,14 @@ export function generateCard() {
 
 }
 export function newCard() {
+  newCc = ''
   var cc = [number1, number2, number3, number4,
     number5, number6, number7, number8, number9,
     number10, number11, number12, number13, number14, number15, number16]
-  newCc = cc.toString();
+  for(let i=0; i<cc.length; i++){
+    newCc += cc[i] + ' ';
+  }
+  // newCc = cc.toString();
   console.log(newCc)
 }
 

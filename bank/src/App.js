@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import { generateCard} from './generateCard.js';
-import { newCard } from './generateCard.js';
 import { newCc } from './generateCard.js';
 import { test } from './generateCard.js';
 
