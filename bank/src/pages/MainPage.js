@@ -21,6 +21,10 @@ function MainPage() {
                 <input type="password">
                 </input>
             </div>
+            <div className='mainButton'>
+                <p>Enter</p>
+                <button></button>
+            </div>                      
       </div>
     </div>
   );

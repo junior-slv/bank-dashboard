@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import MainPage from './pages/MainPage';
 import Menu from './pages/Menu';
+import Card from './pages/Card';
+
 
 
 
@@ -12,5 +14,6 @@ root.render(
   <React.StrictMode>
     <MainPage/>
     <Menu/>
+    <Card/>
   </React.StrictMode>
 );
