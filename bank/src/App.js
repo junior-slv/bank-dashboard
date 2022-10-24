@@ -2,6 +2,8 @@ import React from 'react';
 import { ReactDOM } from 'react';
 import './App.css';
 import { generateCard} from './generateCard';
+import { newCard } from './generateCard.js';
+
 
 
 
@@ -13,7 +15,7 @@ function App() {
                 <h1>Welcome, $name</h1>
             </div>
             <div className='generateButton'>
-                <button className='mainButton' onClick={generateCard}>Generate new card!</button>
+                <button className='mainButton' onClick={generateCard, newCard}>Generate new card!</button>
             </div>
       </div>
       <div className='card'>
@@ -25,3 +27,6 @@ function App() {
 
 export default App;
  
+
+
+
