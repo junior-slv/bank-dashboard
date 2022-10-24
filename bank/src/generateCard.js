@@ -1,4 +1,3 @@
-
 var number1 = 0;
 var number2 = 0;
 var number3 = 0;
@@ -15,9 +14,6 @@ var number13 = 0;
 var number14 = 0;
 var number15 = 0;
 var number16 = 0;
-
-
-
 export function generateCard() {
   number1 = Math.floor(Math.random() * 10)
   number2 = Math.floor(Math.random() * 10)
@@ -35,7 +31,6 @@ export function generateCard() {
   number14 = Math.floor(Math.random() * 10)
   number15 = Math.floor(Math.random() * 10)
   number16 = Math.floor(Math.random() * 10)
-
 }
 export function newCard() {
   newCc = ''
@@ -48,16 +43,10 @@ export function newCard() {
   // newCc = cc.toString();
   console.log(newCc)
 }
-
 export function test() {
   generateCard()
   newCard()
- 
-
- 
-
   var s = document.getElementById("cardNumber");
   s.innerHTML = newCc;
 }
-
 export var newCc;

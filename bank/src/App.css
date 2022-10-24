@@ -25,8 +25,6 @@
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 15px;
-
-
 }
 .mainButton:hover{
     -webkit-box-shadow: 0px -4px 39px -9px rgba(0,0,0,0.75);
@@ -37,6 +35,4 @@
 .mainButton:not(:hover){
     transition: all 0.3s ease-in-out;
 }
-#card{
-    display: none;
-}
+
