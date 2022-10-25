@@ -4,11 +4,12 @@ import './Card.css';
 
 
 
+
+
 function Card() {
   return (
-    <div className="container">
-      <div className='mainMenu'>
-      </div>
+    <div className='.container'>
+      teste
     </div>
   );
 }
