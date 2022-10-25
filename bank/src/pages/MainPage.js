@@ -6,7 +6,7 @@ import './MainPage.css';
 
 function MainPage() {
   return (
-    <div className="container">
+        <div className="container">
       <div className='mainMenu'>
             <div className='mainMenuText'>
                 <h1>Robby bank</h1>
