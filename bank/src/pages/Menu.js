@@ -1,7 +1,8 @@
 import React from 'react';
 import './Menu.css';
-import { newCc, callCc } from '../scripts/generateCard.js';
-import { BrowserRouter } from 'react-router-dom';
+import {callCc } from '../scripts/generateCard.js';
+import { newCc1, newCc2,newCc3, newCc4} from '../scripts/generateCard.js';
+
 
 function Menu() {
   return (
@@ -15,7 +16,7 @@ function Menu() {
                 <button id='mainButton' className='mainButton' onClick={callCc}>Generate new card!</button>
             </div>
             <div className='card'>
-            <p id='cardNumber'> {newCc}</p>
+            <p id='cardNumber'> {}</p>
       </div>
       </div>
 
