@@ -12,7 +12,7 @@ function Menu() {
                 <h1>Welcome, $name</h1>
             </div>
             <div className='generateButton'>
-                <button id='mainButton' className='mainButton' onClick={generateCard}>Generate new card!</button>
+              <button id='mainButton' className='mainButton' onClick={generateCard}>Generate new card!</button>
             </div>
       </div>
 

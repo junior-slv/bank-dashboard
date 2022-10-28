@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css';
-import { newCc1, newCc2,newCc3, newCc4} from '../scripts/generateCard.js';
+import { newCc1, newCc2,newCc3, newCc4, newE} from '../scripts/generateCard.js';
 
 
 
@@ -31,7 +31,7 @@ function Card() {
           <div class="card__black-line"></div>
           <div class="card__back-content">
             <div class="card__secret">
-              <p class="card__secret--last">420</p>
+              <p class="card__secret--last" id='expiration'>{newE}</p>
             </div>
             
           </div>
