@@ -1,12 +1,13 @@
 import React from 'react';
 import './Menu.css';
 import {generateCard} from '../scripts/generateCard.js';
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 
 function Menu() {
   return (
-              <div className="container">
+    <Router>
+                    <div className="container">
       <div className='mainMenu'>
             <div className='mainMenuText'>
                 <h1>Welcome, $name</h1>
@@ -17,6 +18,7 @@ function Menu() {
       </div>
 
     </div>
+    </Router>
   );
 }
 

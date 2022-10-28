@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter as Router} from 'react-router-dom';
+import { RoutesApp } from './scripts/Routes';
 import MainPage from './pages/MainPage';
-import Menu from './pages/Menu';
-import Card from './pages/Card';
 
 
 
@@ -11,7 +11,7 @@ import Card from './pages/Card';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <MainPage/>
-  </React.StrictMode>
+      <React.StrictMode>
+        <MainPage/>
+      </React.StrictMode>
 );
