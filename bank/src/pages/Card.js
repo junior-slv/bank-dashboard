@@ -23,7 +23,7 @@ function Card() {
           </div>
           <div class="card__space-25">
             <span class="card__label">Expires</span>
-                  <p class="card__info">10/25</p>
+                  <p class="card__info">10/30</p>
           </div>
         </div>
         
