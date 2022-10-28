@@ -14,9 +14,6 @@ function Menu() {
             <div className='generateButton'>
                 <button id='mainButton' className='mainButton' onClick={generateCard}>Generate new card!</button>
             </div>
-            <div className='card'>
-            <p id='cardNumber'> {}</p>
-      </div>
       </div>
 
     </div>

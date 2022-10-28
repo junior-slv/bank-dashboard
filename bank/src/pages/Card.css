@@ -30,3 +30,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.CardNumbers{
+  margin: 5px;
+}
