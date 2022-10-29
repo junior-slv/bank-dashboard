@@ -5,11 +5,9 @@ import { generateCard, newCc1, newCc2,newCc3, newCc4, newE} from '../scripts/gen
 
 
 
-generateCard()
-function Card() {
 
-  return (
-    
+function Card() {
+  return(
     <div className='container'>
       <h1>Enjoy your new Robby Card :3</h1>
       <div className='card'>
@@ -41,7 +39,7 @@ function Card() {
         
       </div>
     </div>
-  );
+  )
 }
 export default Card;
  

@@ -24,9 +24,7 @@ export function MainPage() {
           </div>
           <div className='mainButton'>
           <Link to='/home'><p>Enter</p></Link>
-          </div>
-           <><p className='CardNumbers' id='serialTwo'>{}</p><p className='CardNumbers' id='serialThree'>{}</p><p className='CardNumbers' id='serialFour'>{}</p><p class="card__secret--last" id='expiration'>{}</p></>
-  
+          </div>  
         </div>
     </div>
   );
