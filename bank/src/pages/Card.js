@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css';
-import { newCc1, newCc2,newCc3, newCc4, newE} from '../scripts/generateCard.js';
+import { generateCard, newCc1, newCc2,newCc3, newCc4, newE} from '../scripts/generateCard.js';
 
 
 

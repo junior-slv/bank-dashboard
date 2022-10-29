@@ -1,18 +1,24 @@
-import {BrowserRouter as Router, Routes, Route,} from 'react-router-dom';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
 import Card from '../pages/Card';
-import MainPage from '../pages/MainPage';
-import Home from '../pages/Home';
+import { MainPage } from '../pages/MainPage';
+import { Home } from '../pages/Home';
 
-export function RoutesApp(){
-    return (
-      <div className='App'>
-        <Router>
-          <Routes>
-            <Route path="/" element={<MainPage />}>
-              <Route path="home" element={<Home />} />
-            </Route>
-          </Routes>
-        </Router>
-      </div>
-    )
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainPage/>,
+  },
+  {
+    path: "/home",
+    element: <Home/>,
+  },
+  {
+    path: "/card",
+    element: <Card/>,
+  },
+]);
+export default router;

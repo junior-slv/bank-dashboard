@@ -4,9 +4,8 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 
 
-function MainPage() {
+export function MainPage() {
   return (
-        <Router>
       <div className="container">
         <div className='mainMenu'>
           <div className='mainMenuText'>
@@ -23,19 +22,12 @@ function MainPage() {
             </input>
           </div>
           <div className='mainButton'>
-            <p>Enter</p>
+          <Link to='/home'><p>Enter</p></Link>
           </div>
-          <Link to='/home'>next</Link>
+
         </div>
     </div>
-    
-    
-        </Router>
   );
 }
-
-export default MainPage;
- 
-
 
 
