@@ -12,10 +12,10 @@ function Card() {
       <h1>Enjoy your new Robby Card :3</h1>
       <div className='card'>
         <div class="card__front card__part">
-          <p class="card_numer"><p className='CardNumbers' id='serialOne'>{newCc1}</p>
-          <p className='CardNumbers' id='serialTwo'>{newCc2}</p>
-          <p className='CardNumbers' id='serialThree'>{newCc3}</p>
-          <p className='CardNumbers' id='serialFour'>{newCc4}</p>
+          <p class="card_numer"><p className='CardNumbers' id='serialOne'>{5555}</p>
+          <p className='CardNumbers' id='serialTwo'>5555</p>
+          <p className='CardNumbers' id='serialThree'>5555</p>
+          <p className='CardNumbers' id='serialFour'>5555</p>
           </p>
           <div class="card__space-75">
             <span class="card__label">Card holder</span>
@@ -31,7 +31,7 @@ function Card() {
           <div class="card__black-line"></div>
           <div class="card__back-content">
             <div class="card__secret">
-              <p class="card__secret--last" id='expiration'>{newE}</p>
+              <p class="card__secret--last" id='expiration'>666</p>
             </div>
             
           </div>
