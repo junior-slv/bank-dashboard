@@ -42,6 +42,7 @@ export function generateCard() {
   s4.innerHTML = newCc4;
   var s5 = document.getElementById("expiration");
   s5.innerHTML = newE;
+ 
 }
 
 export var newCc1, newCc2, newCc3, newCc4, newE
