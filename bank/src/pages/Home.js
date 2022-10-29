@@ -4,10 +4,9 @@ import {generateCard} from '../scripts/generateCard.js';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 
-function Menu() {
-  return (
-    <Router>
-                    <div className="container">
+const Home = () => {
+  return(
+    <div className="container">
       <div className='mainMenu'>
             <div className='mainMenuText'>
                 <h1>Welcome, $name</h1>
@@ -15,14 +14,12 @@ function Menu() {
             <div className='generateButton'>
               <button id='mainButton' className='mainButton' onClick={generateCard}>Generate new card!</button>
             </div>
-      </div>
-
     </div>
-    </Router>
-  );
+  </div>
+  )
 }
 
-export default Menu;
+export default Home;
  
 
 

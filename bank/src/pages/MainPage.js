@@ -25,7 +25,7 @@ function MainPage() {
           <div className='mainButton'>
             <p>Enter</p>
           </div>
-          <Link to='menu'>next</Link>
+          <Link to='/home'>next</Link>
         </div>
     </div>
     

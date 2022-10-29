@@ -9,7 +9,7 @@ import { newCc1, newCc2,newCc3, newCc4, newE} from '../scripts/generateCard.js';
 function Card() {
   return (
     <div className='container'>
-      <h1>Enjoy your new Robby Card :)</h1>
+      <h1>Enjoy your new Robby Card :3</h1>
       <div className='card'>
         <div class="card__front card__part">
           <p class="card_numer"><p className='CardNumbers' id='serialOne'>{newCc1}</p>
