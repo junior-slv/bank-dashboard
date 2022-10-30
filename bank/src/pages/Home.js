@@ -1,11 +1,8 @@
 import React from 'react';
 import './Menu.css';
-import { generateCard } from '../scripts/generateCard.js';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 
-window.onload = function(){
-  generateCard()
-}
+
 export function Home (){
   return(
     <div className="container">
