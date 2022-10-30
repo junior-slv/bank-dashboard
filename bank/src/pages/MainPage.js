@@ -4,7 +4,9 @@ import {BrowserRouter as Router, Link} from 'react-router-dom';
 import { generateCard } from '../scripts/generateCard';
 
 
-
+window.onload = function(){
+  generateCard()
+}
 export function MainPage() {
   return (
       <div className="container">

@@ -1,19 +1,21 @@
 import React from 'react';
 import './Card.css';
 import { generateCard, newCc1, newCc2,newCc3, newCc4, newE} from '../scripts/generateCard.js';
+import { useEffect } from 'react';
 
 
-
-
-
+window.onload = function(){
+  generateCard()
+}
 function Card() {
+
   return(
     <div className='container'>
       <h1>Enjoy your new Robby Card :3</h1>
-      <div className='card'>
+      <div className='card' >
         <div class="card__front card__part">
-          <p class="card_numer"><p className='CardNumbers' id='serialOne'>{5555}</p>
-          <p className='CardNumbers' id='serialTwo'>5555</p>
+          <p class="card_numer"><p className='CardNumbers' id='serialOne'>{newCc1}</p>
+          <p className='CardNumbers' id='serialTwo' > </p>
           <p className='CardNumbers' id='serialThree'>5555</p>
           <p className='CardNumbers' id='serialFour'>5555</p>
           </p>
@@ -38,8 +40,11 @@ function Card() {
         </div>
         
       </div>
+
     </div>
+    
   )
+  
 }
 export default Card;
  

@@ -32,6 +32,8 @@ export function generateCard() {
   var newCc3 = cc3.join('')
   var newCc4 = cc4.join('')
   var newE = e.join('')
+
+
   var s1 = document.getElementById("serialOne");
   s1.innerHTML = newCc1;
   var s2 = document.getElementById("serialTwo");
