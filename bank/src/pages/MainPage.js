@@ -2,7 +2,8 @@ import React from 'react';
 import './MainPage.css';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 
-
+var name = window.prompt("Insira seu nome")
+var surname = window.prompt("Insira seu sobrenome")
 export function MainPage() {
   return (
       <div className="container">
@@ -27,6 +28,6 @@ export function MainPage() {
     </div>
   );
 }
-
+export var name, surname;
 
 
