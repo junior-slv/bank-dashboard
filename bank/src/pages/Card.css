@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 .container{
     background: #50514F;
     width: 100vw;
@@ -19,8 +26,19 @@ h1 {
     margin-bottom: 30px;
     color: #162969;
 }
+.textinput {
+  display: none;
 
-
+}
+.textbutton{
+  border: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  background-image:  linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
+  margin-bottom: 50px;
+  padding: 16px 32px;
+}
 .card{
 width: 320px;
 height: 190px;

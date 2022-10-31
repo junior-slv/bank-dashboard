@@ -5,7 +5,6 @@ import { copyText } from '../scripts/copyText.js';
 var number1,number2,number3,number4,number5,number6
 ,number7,number8,number9,number10,number11,number12,number13
 ,number14,number15,number16, eNumber1, eNumber2, eNumber3;
-var cText = 'asd'
 
 function Card() {
   number1 = Math.floor(Math.random() * 10)
@@ -42,8 +41,9 @@ function Card() {
   return(
     <div className='container'>
       <h1>Enjoy your new Robby Card :3</h1>
-      <input type="text" value={FullNS} id="myInput"/>
-        <button onClick={copyText}>Copy text</button>
+      <button className='textbutton' onClick={copyText}>COPY NUMBERS</button>
+      <input className='textinput' type="text" value={FullNS} id="myInput"/>
+
       <div className='card'>
         <div class="card__front card__part">
           <p class="card_numer"><p className='CardNumbers' id='serialOne' >{newCc1}</p>
