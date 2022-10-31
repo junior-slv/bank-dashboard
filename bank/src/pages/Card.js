@@ -1,10 +1,11 @@
 import React from 'react';
 import './Card.css';
 import {name, surname} from './MainPage.js'
+import { copyText } from '../scripts/copyText.js';
 var number1,number2,number3,number4,number5,number6
 ,number7,number8,number9,number10,number11,number12,number13
-,number14,number15,number16, eNumber1, eNumber2, eNumber3 = 0;
-
+,number14,number15,number16, eNumber1, eNumber2, eNumber3;
+var cText = 'asd'
 
 function Card() {
   number1 = Math.floor(Math.random() * 10)
@@ -36,10 +37,14 @@ function Card() {
   var newCc3 = cc3.join('')
   var newCc4 = cc4.join('')
   var newE = e.join('')
+  var fullN = [number1, number2,number3,number4,number5,number6,number7,number8,number9,number10,number11,number12,number13,number14,number15,number16]
+  var FullNS = fullN.join('')
   return(
     <div className='container'>
       <h1>Enjoy your new Robby Card :3</h1>
-      <div className='card' >
+      <input type="text" value={FullNS} id="myInput"/>
+        <button onClick={copyText}>Copy text</button>
+      <div className='card'>
         <div class="card__front card__part">
           <p class="card_numer"><p className='CardNumbers' id='serialOne' >{newCc1}</p>
           <p className='CardNumbers' id='serialTwo' >{newCc2}</p>
@@ -65,15 +70,15 @@ function Card() {
             
           </div>
         </div>
-        
-      </div>
 
+        </div>
     </div>
     
   )
   
 }
 export default Card;
+export var FullNs
  
 
 
