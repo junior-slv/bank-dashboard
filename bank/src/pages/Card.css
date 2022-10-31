@@ -31,6 +31,7 @@ h1 {
 
 }
 .textbutton{
+  border-radius: 15px;
   border: none;
   color: #fff;
   font-family: 'Roboto', sans-serif;
