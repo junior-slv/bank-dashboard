@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Login.css';
-import {validarEmail, validarSenha} from '../../scripts/validarEmail'
 import { Link, useNavigate } from 'react-router-dom'
 import UserService from '../../scripts/UserService.js'
+import {validarEmail, validarSenha} from '../../scripts/validadores';
 
 const userService = new UserService()
 
@@ -47,7 +47,7 @@ const Login = () => {
         />
         <div>
           <p>Não possui conta?</p>
-          <p><Link to='/register'>Cadastrar</Link></p>  
+          <p><Link to='/cadastro'>Cadastrar</Link></p>  
         </div>
       </form>
     </div>

@@ -3,7 +3,7 @@ import axios from 'axios';
 export default class UserServices {
   constructor () {
     this.axios = axios.create({
-      baseURL: process.env.REACT_APP_API_LOGIN + '/api'
+      baseURL: process.env.REACT_APP_API_LOGIN + '/api' 
     })
   }
 
@@ -27,8 +27,10 @@ export default class UserServices {
 
   usuarioAutenticado () {
     return localStorage.getItem("token") != undefined ? true : false
+    // return typeof localStorage.getItem("token")
   }
 
+  //Desafio ---> implemente um botão que chama essa função dentro da página Home
   async logout () {
     localStorage.removeItem("token")
     localStorage.removeItem("nome")

@@ -4,9 +4,10 @@ import {
   Route,
 } from "react-router-dom";
 import Login from "../../pages/Login/Login";
-import {Cadastro} from "../../pages/Cadastro/Cadastro";
+import Cadastro from "../../pages/Cadastro/Cadastro";
 import Card from "../../pages/Card/Card";
 import ProtectedRoutes from "./ProtectedRoutes";
+
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     element: <Login/>,
   },
   {
-    path: "/home",
+    path: "/cadastro",
     element: <Cadastro/>,
   },
   {
@@ -23,3 +24,4 @@ const router = createBrowserRouter([
   },
 ]);
 export default router;
+
