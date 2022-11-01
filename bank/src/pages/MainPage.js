@@ -1,20 +1,28 @@
 import React, { useState } from 'react';
 import './MainPage.css';
-import {BrowserRouter as Router, Link} from 'react-router-dom';
-function Login(){
+import {validarEmail, validarSenha} from '../scripts/validarEmail'
+import { NavLink, useNavigate } from 'react-router-dom'
+const Login = () => {
   const [loading, setLoading] = useState()
+  const [form, setForm] = useState([])
+  const navigate = useNavigate()
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try{
       setLoading(true)
+      alert('Login')
+      setLoading(false)
     }
-    catch{
-
+    catch (err){
+      alert('Algo deu errado com o login' + err)
     }
   }
   const handleChange = (event) => {
+    setForm({...form, [event.target.name]: event.target.value})  }
 
-  }
+  const validadorInput = () => {
+    return validarEmail(form.email) && validarSenha(form.password)  }
   return(
     <div className='container'>
       <form>
@@ -31,7 +39,7 @@ function Login(){
         type='submit'
         text='Entrar!'
         onClick={handleSubmit}
-        // disabled={loading === true || !validadorInput()}
+        disabled={loading === true || !validadorInput()}
         />
         <div>
           <p>Não possui conta?</p>
