@@ -3,9 +3,10 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import Card from '../pages/Card';
-import  Login  from '../pages/MainPage';
-import { Home } from '../pages/Home';
+import Login from "../../pages/Login/Login";
+import {Cadastro} from "../../pages/Cadastro/Cadastro";
+import Card from "../../pages/Card/Card";
+import ProtectedRoutes from "./ProtectedRoutes";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/home",
-    element: <Home/>,
+    element: <Cadastro/>,
   },
   {
     path: "/card",

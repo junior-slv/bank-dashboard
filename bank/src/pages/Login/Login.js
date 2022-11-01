@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
-import './MainPage.css';
-import {validarEmail, validarSenha} from '../scripts/validarEmail'
-import { NavLink, useNavigate } from 'react-router-dom'
+import './Login.css';
+import {validarEmail, validarSenha} from '../../scripts/validarEmail'
+import { Link, useNavigate } from 'react-router-dom'
+import UserService from '../../scripts/UserService.js'
+
+const userService = new UserService()
+
 const Login = () => {
   const [loading, setLoading] = useState()
   const [form, setForm] = useState([])
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -43,7 +47,7 @@ const Login = () => {
         />
         <div>
           <p>Não possui conta?</p>
-          <p>Cadastrar</p>
+          <p><Link to='/register'>Cadastrar</Link></p>  
         </div>
       </form>
     </div>

@@ -6,13 +6,7 @@ import {
   RouterProvider,
   Route,
 } from "react-router-dom";
-import App, { RoutesApp } from './scripts/Routes';
-import {MainPage} from './pages/MainPage';
-import {Home} from './pages/Home';
-import Card from './pages/Card';
-import router from './scripts/Routes';
-
-
+import router from './scripts/Routes/Routes';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

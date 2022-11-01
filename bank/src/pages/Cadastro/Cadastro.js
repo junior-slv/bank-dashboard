@@ -1,9 +1,9 @@
 import React from 'react';
-import './Menu.css';
+import './Cadastro.css';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 
-export function Home (){
+export function Cadastro (){
   return(
     <div className="container">
       <p id='serialOne'></p>
