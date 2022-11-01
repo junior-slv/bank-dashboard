@@ -4,13 +4,13 @@ import {
   Route,
 } from "react-router-dom";
 import Card from '../pages/Card';
-import { MainPage } from '../pages/MainPage';
+import  Login  from '../pages/MainPage';
 import { Home } from '../pages/Home';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainPage/>,
+    element: <Login/>,
   },
   {
     path: "/home",

@@ -53,7 +53,7 @@ function Card() {
           </p>
           <div class="card__space-75">
             <span class="card__label">Card holder</span>
-            <p class="card__info">{name} {surname}</p>
+            <p class="card__info">{} {}</p>
           </div>
           <div class="card__space-25">
             <span class="card__label">Expires</span>
