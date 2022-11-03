@@ -1,23 +1,16 @@
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
 } from "react-router-dom";
-import Login from "../../pages/Login/Login";
-import Cadastro from "../../pages/Cadastro/Cadastro";
+import MainApp from "../../pages/MainApp/MainApp";
 import Card from "../../pages/Card/Card";
-import ProtectedRoutes from "./ProtectedRoutes";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login/>,
+    element: <MainApp/>,
   },
-  {
-    path: "/cadastro",
-    element: <Cadastro/>,
-  },
+
   {
     path: "/card",
     element: <Card/>,

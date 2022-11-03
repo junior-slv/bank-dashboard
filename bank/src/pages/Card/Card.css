@@ -6,7 +6,7 @@
 
 }
 .container{
-    background: #50514F;
+    background: #4b99da;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -39,6 +39,9 @@ h1 {
   background-image:  linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
   margin-bottom: 50px;
   padding: 16px 32px;
+}
+.textbutton:hover{
+  transform: scale(1.1);
 }
 .card{
 width: 320px;

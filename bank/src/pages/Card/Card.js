@@ -1,6 +1,8 @@
 import React from 'react';
 import './Card.css';
 import { copyText } from '../../scripts/copyText.js';
+import {name, surname} from '../MainApp/MainApp';
+
 var number1,number2,number3,number4,number5,number6
 ,number7,number8,number9,number10,number11,number12,number13
 ,number14,number15,number16, eNumber1, eNumber2, eNumber3;
@@ -39,7 +41,7 @@ function Card() {
   var FullNS = fullN.join('')
   return(
     <div className='container'>
-      <h1>Enjoy your new Robby Card :3</h1>
+      <h1>Congratulations, enjoy your new card! &#128513;</h1>
       <button className='textbutton' onClick={copyText}>COPY NUMBERS</button>
       <input className='textinput' type="text" value={FullNS} id="myInput"/>
 
@@ -52,7 +54,7 @@ function Card() {
           </p>
           <div class="card__space-75">
             <span class="card__label">Card holder</span>
-            <p class="card__info">{} {}</p>
+            <p class="card__info">{name} {surname}</p>
           </div>
           <div class="card__space-25">
             <span class="card__label">Expires</span>

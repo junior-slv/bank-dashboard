@@ -1,0 +1,28 @@
+.container{
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.textbutton{
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background-image:  linear-gradient(to right bottom, #fd696b, #fa616e, #f65871, #f15075, #ec4879);
+    margin-bottom: 50px;
+    padding: 16px 32px;
+}
+.textbutton:hover{
+    transform: scale(1.1);
+  }
