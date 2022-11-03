@@ -11,8 +11,8 @@ export default class UserServices {
     const {data} = await this.axios.post('/login', dados)
 
     if (data) {
-      localStorage.setItem("nome", data.user.nome)
-      localStorage.setItem("email", data.user.email)
+      localStorage.setItem("nome", data.users.nome)
+      localStorage.setItem("email", data.users.email)
       localStorage.setItem("token", data.token.token)
 
       return true
