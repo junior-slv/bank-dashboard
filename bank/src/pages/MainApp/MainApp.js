@@ -4,11 +4,12 @@ import './MainApp.css';
 var name = window.prompt("Insira seu nome")
 var surname = window.prompt("Insira seu sobrenome")
 export default function MainApp(){
+
   return(
     <div className='container'>
       <form>
           <h1>BEM VINDO, {name}</h1>
-          <button className='textbutton'><Link to='/card'>PRÓXIMO &gt;</Link> </button>
+          <Link to='/card'><button className='textbutton'>PRÓXIMO &gt;</button></Link>
       </form>
     </div>
   )
